@@ -45,7 +45,7 @@ public class ConnectionService {
     }
 
 
-    public void sendRequest(String request) throws IOException {
+    private void sendRequest(String request) throws IOException {
 
         DataOutputStream wr = new DataOutputStream(con.getOutputStream());
         wr.writeBytes(request);

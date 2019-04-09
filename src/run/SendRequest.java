@@ -24,7 +24,6 @@ public class SendRequest {
         try {
             Request request = new Request(template, params);
             ConnectionService connection = new ConnectionService(request.getRequest());
-            connection.sendRequest(request.getRequest());
             System.out.println(connection.getResponse());
         } catch (IOException e) {
             System.out.println(e.getMessage());
